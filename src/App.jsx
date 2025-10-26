@@ -1,120 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Twitter, ExternalLink, Award, GraduationCap, Briefcase, ChevronDown, X, Calendar, Code, Users } from 'lucide-react';
+import { socialLinks } from './data/profile';
+import { projects } from './data/projects';
+import { education } from './data/education';
+import { certifications } from './data/certifications';
 
-// Data Files
-const socialLinks = [
-  { name: 'GitHub', icon: Github, url: 'https://github.com/yourusername' },
-  { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/yourusername' },
-  { name: 'Twitter', icon: Twitter, url: 'https://twitter.com/yourusername' },
-  { name: 'Email', icon: Mail, url: 'mailto:your.email@example.com' }
-];
-
-const projects = [
-  {
-    id: 1,
-    title: 'Machine Learning Research Project',
-    description: 'Developed a novel approach to image classification using deep learning techniques.',
-    technologies: ['Python', 'TensorFlow', 'PyTorch'],
-    image: './images/project1.jpg',
-    detailedDescription: 'This comprehensive machine learning project focuses on developing state-of-the-art image classification models. The research explores novel architectural approaches combining convolutional neural networks with attention mechanisms to improve classification accuracy across diverse datasets.',
-    features: [
-      'Custom CNN architecture with attention layers',
-      'Data augmentation pipeline for improved generalization',
-      'Transfer learning from pre-trained models',
-      'Real-time inference optimization',
-      'Comprehensive evaluation metrics and visualization'
-    ],
-    duration: 'January 2024 - March 2024',
-    role: 'Lead Researcher',
-    team: '4 members',
-    github: 'https://github.com/yourusername/project1',
-    demo: 'https://demo.project1.com'
-  },
-  {
-    id: 2,
-    title: 'Academic Paper Repository',
-    description: 'A comprehensive collection of research papers with interactive visualizations.',
-    technologies: ['React', 'D3.js', 'Node.js'],
-    image: './images/project2.jpg',
-    detailedDescription: 'An innovative web application designed to organize and visualize academic research papers. The platform features advanced search capabilities, citation networks, and interactive data visualizations to help researchers discover connections between different works.',
-    features: [
-      'Advanced search and filtering system',
-      'Interactive citation network graphs',
-      'PDF viewer with annotation support',
-      'Collaborative collections and notes',
-      'Export to various citation formats'
-    ],
-    duration: 'September 2023 - December 2023',
-    role: 'Full Stack Developer',
-    team: '3 members',
-    github: 'https://github.com/yourusername/project2',
-    demo: 'https://demo.project2.com'
-  },
-  {
-    id: 3,
-    title: 'Data Analysis Tool',
-    description: 'Statistical analysis tool for academic research with automated report generation.',
-    technologies: ['R', 'Shiny', 'ggplot2'],
-    image: './images/project3.jpg',
-    detailedDescription: 'A powerful statistical analysis platform built for academic researchers. This tool streamlines the entire data analysis workflow from data import through visualization to automated report generation, making complex statistical analyses accessible to researchers with varying technical backgrounds.',
-    features: [
-      'Import data from multiple formats (CSV, Excel, SPSS)',
-      'Comprehensive statistical test library',
-      'Customizable visualization templates',
-      'Automated R Markdown report generation',
-      'Reproducible analysis pipelines'
-    ],
-    duration: 'May 2023 - August 2023',
-    role: 'Data Scientist',
-    team: '2 members',
-    github: 'https://github.com/yourusername/project3',
-    demo: 'https://demo.project3.com'
-  }
-];
-
-const education = [
-  {
-    id: 1,
-    degree: 'Master of Science in Computer Science',
-    institution: 'University Name',
-    duration: '2022 - 2024',
-    gpa: '3.9/4.0'
-  },
-  {
-    id: 2,
-    degree: 'Bachelor of Science in Software Engineering',
-    institution: 'University Name',
-    duration: '2018 - 2022',
-    gpa: '3.8/4.0'
-  }
-];
-
-const certifications = [
-  {
-    id: 1,
-    name: 'AWS Certified Solutions Architect',
-    issuer: 'Amazon Web Services',
-    date: 'March 2024',
-    credentialId: 'ABC123XYZ',
-    link: 'https://www.credly.com/badges/your-badge-id'
-  },
-  {
-    id: 2,
-    name: 'Google Data Analytics Professional Certificate',
-    issuer: 'Google',
-    date: 'January 2024',
-    credentialId: 'DEF456UVW',
-    link: 'https://www.coursera.org/account/accomplishments/your-certificate-id'
-  },
-  {
-    id: 3,
-    name: 'Deep Learning Specialization',
-    issuer: 'Coursera - DeepLearning.AI',
-    date: 'November 2023',
-    credentialId: 'GHI789RST',
-    link: 'https://www.coursera.org/account/accomplishments/specialization/your-specialization-id'
-  }
-];
 
 // Project Detail Modal Component
 function ProjectDetailModal({ project, onClose }) {
@@ -400,13 +290,13 @@ export default function Portfolio() {
               {projects.map((project, index) => (
                 <div
                   key={project.id}
-                  className="backdrop-blur-xl bg-white/10 rounded-2xl overflow-hidden border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-blue-500/20 group"
+                  className="backdrop-blur-xl bg-white/10 rounded-2xl overflow-hidden border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-blue-500/20 group flex flex-col"
                   style={{
                     transitionDelay: `${index * 100}ms`
                   }}
                 >
                   {/* Project Image */}
-                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-purple-500/20 to-blue-500/20">
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex-shrink-0">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -418,9 +308,9 @@ export default function Portfolio() {
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                   </div>
 
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">{project.title}</h3>
-                    <p className="text-gray-300 mb-4 text-sm leading-relaxed">{project.description}</p>
+                    <p className="text-gray-300 mb-4 text-sm leading-relaxed flex-grow">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.technologies.map((tech, index) => (
                         <span key={index} className="px-3 py-1 backdrop-blur-lg bg-gradient-to-r from-purple-500/30 to-blue-500/30 text-purple-200 rounded-full text-xs font-medium border border-purple-400/30 hover:border-purple-400/60 hover:scale-110 transition-all duration-300">
@@ -430,7 +320,7 @@ export default function Portfolio() {
                     </div>
                     <button
                       onClick={() => setSelectedProject(project)}
-                      className="relative backdrop-blur-xl bg-blue-500/20 hover:bg-blue-500/30 border border-blue-400/30 hover:border-blue-400/60 rounded-lg px-4 py-2 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 font-medium text-sm transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/30 overflow-hidden group/btn w-full justify-center"
+                      className="relative backdrop-blur-xl bg-blue-500/20 hover:bg-blue-500/30 border border-blue-400/30 hover:border-blue-400/60 rounded-lg px-4 py-2 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 font-medium text-sm transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/30 overflow-hidden group/btn w-full justify-center mt-auto"
                     >
                       <span className="relative z-10 flex items-center gap-2">
                         View Details <ExternalLink className="w-4 h-4 group-hover/btn:rotate-45 transition-transform duration-300" />
