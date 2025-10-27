@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, Twitter, ExternalLink, Award, GraduationCap, Briefcase, ChevronDown, X, Calendar, Code, Users } from 'lucide-react';
-import { socialLinks } from './data/profile';
-import { projects } from './data/projects';
-import { education } from './data/education';
-import { certifications } from './data/certifications';
+import { Github, ExternalLink, GraduationCap, ChevronDown, X, Calendar, Code, Users } from 'lucide-react';
+import ProjectsSection from './components/projects-section';
+import CertificationsSection from './components/certifications-section';
+import EducationSection from './components/education-section';
+import Header from './components/header';
+import WorkExperience from './components/work-experience-section';
 
 
 // Project Detail Modal Component
@@ -192,190 +193,25 @@ export default function Portfolio() {
 
       <div className="relative z-10 container mx-auto px-4 py-12 max-w-6xl">
         {/* Header Section */}
-        <header className="text-center mb-16" data-animate id="header">
-          <div
-            className={`backdrop-blur-2xl bg-white/5 rounded-3xl p-12 shadow-2xl border border-white/10 hover:bg-white/10 transition-all duration-700 ${isVisible.header ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
-              }`}
-            style={{
-              transition: 'all 0.7s ease-out',
-              transform: `translateY(${scrollY * -0.1}px)`
-            }}
-          >
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-purple-500/80 to-blue-600/80 backdrop-blur-xl flex items-center justify-center text-white text-4xl font-bold shadow-2xl border border-white/20 hover:scale-110 transition-transform duration-300">
-              YN
-            </div>
-            <h1 className="text-5xl font-bold text-white mb-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-400 transition-all duration-300">Your Name</h1>
-            <p className="text-xl text-gray-300 mb-6">Computer Science Researcher | Software Engineer</p>
+        <Header
+          isVisible={isVisible.header} />
 
-            {/* Social Links */}
-            <div className="flex justify-center gap-4 flex-wrap">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative backdrop-blur-xl bg-white/10 hover:bg-white/20 p-3 rounded-xl hover:scale-105 shadow-xl border border-white/20 hover:border-white/40 overflow-hidden hover:shadow-purple-500/50"
-                  style={{
-                    width: '48px',
-                    transition: 'all 0.3s ease'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.width = '160px';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.width = '48px';
-                  }}
-                  title={social.name}
-                >
-                  <div className="flex items-center gap-3 whitespace-nowrap">
-                    <social.icon className="w-6 h-6 text-gray-200 group-hover:text-white transition-colors duration-300 flex-shrink-0" />
-                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white font-medium text-sm">
-                      {social.name}
-                    </span>
-                  </div>
-                </a>
-              ))}
-            </div>
+        <EducationSection
+          isVisible={isVisible.education}
+        />
 
-            {/* Scroll indicator */}
-            <div className="mt-12 animate-bounce">
-              <ChevronDown className="w-8 h-8 text-gray-400 mx-auto" />
-            </div>
-          </div>
-        </header>
+        <ProjectsSection
+          isVisible={isVisible.projects}
+        />
 
-        {/* Education Section */}
-        <section className="mb-16" data-animate id="education">
-          <div
-            className={`backdrop-blur-2xl bg-white/5 rounded-3xl p-8 shadow-2xl border border-white/10 hover:bg-white/10 transition-all duration-700 ${isVisible.education ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
-              }`}
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <GraduationCap className="w-8 h-8 text-purple-400 animate-pulse" />
-              <h2 className="text-3xl font-bold text-white hover:text-purple-400 transition-colors duration-300">Education</h2>
-            </div>
-            <div className="space-y-4">
-              {education.map((edu, index) => (
-                <div
-                  key={edu.id}
-                  className="backdrop-blur-xl bg-white/10 rounded-2xl p-6 border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 shadow-xl hover:shadow-purple-500/20 hover:-translate-y-1"
-                  style={{
-                    transitionDelay: `${index * 100}ms`
-                  }}
-                >
-                  <h3 className="text-xl font-bold text-white mb-2">{edu.degree}</h3>
-                  <p className="text-gray-300 font-medium mb-1">{edu.institution}</p>
-                  <div className="flex justify-between items-center text-gray-400">
-                    <span>{edu.duration}</span>
-                    <span className="font-semibold text-purple-300">{edu.gpa}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <WorkExperience
+          isVisible={isVisible.workExperience}
+          onProjectClick={setSelectedProject}
+        />
 
-        {/* Projects Section */}
-        <section className="mb-16" data-animate id="projects">
-          <div
-            className={`backdrop-blur-2xl bg-white/5 rounded-3xl p-8 shadow-2xl border border-white/10 hover:bg-white/10 transition-all duration-700 ${isVisible.projects ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'
-              }`}
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <Briefcase className="w-8 h-8 text-blue-400 animate-pulse" style={{ animationDelay: '0.5s' }} />
-              <h2 className="text-3xl font-bold text-white hover:text-blue-400 transition-colors duration-300">Projects</h2>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {projects.map((project, index) => (
-                <div
-                  key={project.id}
-                  className="backdrop-blur-xl bg-white/10 rounded-2xl overflow-hidden border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-blue-500/20 group flex flex-col"
-                  style={{
-                    transitionDelay: `${index * 100}ms`
-                  }}
-                >
-                  {/* Project Image */}
-                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex-shrink-0">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-                  </div>
-
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">{project.title}</h3>
-                    <p className="text-gray-300 mb-4 text-sm leading-relaxed flex-grow">{project.description}</p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.technologies.map((tech, index) => (
-                        <span key={index} className="px-3 py-1 backdrop-blur-lg bg-gradient-to-r from-purple-500/30 to-blue-500/30 text-purple-200 rounded-full text-xs font-medium border border-purple-400/30 hover:border-purple-400/60 hover:scale-110 transition-all duration-300">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                    <button
-                      onClick={() => setSelectedProject(project)}
-                      className="relative backdrop-blur-xl bg-blue-500/20 hover:bg-blue-500/30 border border-blue-400/30 hover:border-blue-400/60 rounded-lg px-4 py-2 inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 font-medium text-sm transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/30 overflow-hidden group/btn w-full justify-center mt-auto"
-                    >
-                      <span className="relative z-10 flex items-center gap-2">
-                        View Details <ExternalLink className="w-4 h-4 group-hover/btn:rotate-45 transition-transform duration-300" />
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Certifications Section */}
-        <section className="mb-16" data-animate id="certifications">
-          <div
-            className={`backdrop-blur-2xl bg-white/5 rounded-3xl p-8 shadow-2xl border border-white/10 hover:bg-white/10 transition-all duration-700 ${isVisible.certifications ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-              }`}
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <Award className="w-8 h-8 text-pink-400 animate-pulse" style={{ animationDelay: '1s' }} />
-              <h2 className="text-3xl font-bold text-white hover:text-pink-400 transition-colors duration-300">Certifications</h2>
-            </div>
-            <div className="space-y-4">
-              {certifications.map((cert, index) => (
-                <div
-                  key={cert.id}
-                  className="backdrop-blur-xl bg-white/10 rounded-2xl p-6 border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 shadow-xl hover:shadow-pink-500/20 hover:-translate-y-1"
-                  style={{
-                    transitionDelay: `${index * 100}ms`
-                  }}
-                >
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-2">{cert.name}</h3>
-                      <p className="text-gray-300 font-medium mb-1">{cert.issuer}</p>
-                      <div className="flex flex-wrap gap-4 items-center text-gray-400 text-sm">
-                        <span>{cert.date}</span>
-                        <span className="font-mono text-xs text-gray-500">ID: {cert.credentialId}</span>
-                      </div>
-                    </div>
-                    <a
-                      href={cert.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="backdrop-blur-xl bg-pink-500/20 hover:bg-pink-500/30 border border-pink-400/30 hover:border-pink-400/60 rounded-lg px-4 py-2 inline-flex items-center gap-2 text-pink-300 hover:text-pink-200 font-medium text-sm transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-pink-500/30 self-start md:self-center whitespace-nowrap"
-                    >
-                      View Certificate <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
+        <CertificationsSection
+          isVisible={isVisible.certifications}
+        />
         {/* Footer */}
         <footer className="text-center">
           <div className="backdrop-blur-2xl bg-white/5 rounded-3xl p-6 shadow-2xl border border-white/10 hover:bg-white/10 transition-all duration-500">
