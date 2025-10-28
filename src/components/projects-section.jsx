@@ -1,6 +1,6 @@
 import { projects } from "../data/projects";
 import { Briefcase, ExternalLink } from 'lucide-react';
-export default function ProjectsSection({ isVisible }) {
+export default function ProjectsSection({ isVisible, setSelectedProject }) {
     return (<section className="mb-16" data-animate id="projects">
         <div
             className={`backdrop-blur-2xl bg-white/5 rounded-3xl p-8 shadow-2xl border border-white/10 hover:bg-white/10 transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'

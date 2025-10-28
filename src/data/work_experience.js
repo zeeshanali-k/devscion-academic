@@ -1,46 +1,17 @@
 export const workExperience = [
     {
         id: 1,
-        title: 'Senior Software Engineer',
-        company: 'Tech Corp',
-        location: 'San Francisco, CA',
-        duration: 'January 2023 - Present',
+        title: 'Lead KMP Mobile App Developer',
+        company: 'Tabaarak ICT',
+        location: 'Adis Ababa, Ehtiopia (Remote)',
+        duration: 'July 2024 - Present',
         type: 'Full-time',
-        description: 'Led development of machine learning pipelines and managed a team of 5 engineers. Improved model accuracy by 25% and reduced inference time by 40%.',
+        description: 'Led development of a Ride Booking App called Feres (Available in Ehtiopia and nearby countries) and managed a team of 2 engineers. Implemented complete dynamic UI and Business Logic of whole app from booking ride to tracking ride including push notifications delivery. Added the ability to handle push notifications efficiently. Reduced app load times 20% by managing REST Api Calls efficiently.',
         responsibilities: [
-            'Architected and implemented ML infrastructure',
-            'Mentored junior developers and conducted code reviews',
-            'Collaborated with product teams on feature development'
-        ],
-        relatedProjects: [1] // Project IDs from your projects data
-    },
-    {
-        id: 2,
-        title: 'Research Assistant',
-        company: 'University Research Lab',
-        location: 'Remote',
-        duration: 'June 2022 - December 2022',
-        type: 'Part-time',
-        description: 'Conducted research on deep learning applications in computer vision. Published 2 papers in peer-reviewed conferences.',
-        responsibilities: [
-            'Developed novel CNN architectures for image classification',
-            'Performed extensive literature reviews',
-            'Presented findings at academic conferences'
-        ],
-        relatedProjects: [1]
-    },
-    {
-        id: 3,
-        title: 'Software Development Intern',
-        company: 'StartUp Inc',
-        location: 'New York, NY',
-        duration: 'May 2021 - August 2021',
-        type: 'Internship',
-        description: 'Built full-stack web applications using React and Node.js. Contributed to core product features used by 10k+ users.',
-        responsibilities: [
-            'Developed responsive UI components',
-            'Integrated RESTful APIs',
-            'Wrote unit and integration tests'
+            'App\'s business logic implemented',
+            'Developed Dynamic UI accros whole app',
+            'Implemented Push Notifications delivery and handling',
+            'Implemented gRPC for live trip status tracking in app'
         ],
         relatedProjects: [1]
     }
