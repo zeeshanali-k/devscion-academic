@@ -16,7 +16,7 @@ export const education = [
     },
     {
         id: 3,
-        degree: 'Secondary School - (Matric)',
+        degree: 'Secondary School (Matric)',
         institution: 'GOVT. High School Haveli Majoka (Sargodha)',
         duration: '2015 - 2017',
         gpa: '963/1100 (87%)'

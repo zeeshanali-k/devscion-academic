@@ -1,6 +1,8 @@
 
-import { Github, ExternalLink, X, Calendar, Code, Users, Play, Apple } from 'lucide-react';
-import React, { useState, useEffect } from 'react';
+import { Github, ExternalLink, X, Calendar, Code, Users } from 'lucide-react';
+import { useEffect } from 'react';
+import { IoLogoGooglePlaystore, IoLogoAppleAppstore } from "react-icons/io5";
+
 
 export default function ProjectDetailsModal({ project, onClose }) {
     useEffect(() => {
@@ -147,7 +149,7 @@ export default function ProjectDetailsModal({ project, onClose }) {
                                 rel="noopener noreferrer"
                                 className="backdrop-blur-xl bg-blue-500/20 hover:bg-blue-500/30 border border-blue-400/30 hover:border-blue-400/60 rounded-xl px-6 py-3 inline-flex items-center gap-2 text-blue-300 font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/30"
                             >
-                                <Play className="w-5 h-5" color="#3BCCFF" />
+                                <IoLogoGooglePlaystore className="w-5 h-5" color="#ffffff" />
                                 Playstore
                             </a>
                         )}
@@ -158,7 +160,7 @@ export default function ProjectDetailsModal({ project, onClose }) {
                                 rel="noopener noreferrer"
                                 className="backdrop-blur-xl bg-blue-500/20 hover:bg-blue-500/30 border border-blue-400/30 hover:border-blue-400/60 rounded-xl px-6 py-3 inline-flex items-center gap-2 text-blue-300 font-medium transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/30"
                             >
-                                <Apple className="w-5 h-5" color="#ffffff" />
+                                <IoLogoAppleAppstore className="w-5 h-5" color="#ffffff" />
                                 App Store
                             </a>
                         )}

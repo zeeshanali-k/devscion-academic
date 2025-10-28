@@ -71,5 +71,24 @@ export const projects = [
         role: 'Mobile App Developer',
         team: '1 members',
         link: 'https://drive.google.com/file/d/1eEUgP5R-nX0meBGTpQA9qhruBVOcSh26/view?usp=sharing'
+    },
+    {
+        id: 5,
+        title: 'VC Panel',
+        description: 'VC Panel is Vehicle Tracking Anti Theft system built in Kotlin and PHP (Laravel) as backend',
+        technologies: ["Kotlin", "Android Studio", "Jetpack Compose", "Gradle", "Blockchain"],
+        image: './images/project1.jpg',
+        detailedDescription: 'VC Panel is Vehicle Tracking Anti Theft system built in Native Android using Kotlin and Google Maps for showing vehicle tracking data. It uses PHP (Laravel) as backend for REST APIs and Live vehicle tracking using Laravel Sockets (Web Sockets). The purpose of this project is to make people feel safe about their vehicles and easily recover their vehicle in case of theft.',
+        features: [
+            'Set fences and get notified whenever the vehicle enters or leaves fence',
+            'There a vast number of features including ignition alert, anti theft alert, etc',
+            'You can lock your vehicle from mobile app in case of theft',
+            'Live location and analytics',
+            'Push Notifications Alert'
+        ],
+        duration: 'March 2023 - May 2023',
+        role: 'Mobile App Developer',
+        team: '1 members',
+        playLink: 'https://play.google.com/store/apps/details?id=com.mtn.vcpanel'
     }
 ];

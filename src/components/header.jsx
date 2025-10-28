@@ -16,10 +16,7 @@ export default function Header({ isVisible }) {
                 ZA
             </div>
             <h1 className="text-5xl font-bold text-white mb-3 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-400 transition-all duration-300">Zeeshan Ali</h1>
-            {/* <p className="text-xl text-gray-300 mb-6">Mobile Apps Developer</p>
-            <p className="text-xl text-gray-300 mb-6">Android | iOS | KMP | Flutter</p>
-            <p className="text-xl text-gray-300 mb-6">AI Enthusiast</p>
-            <p className="text-xl text-gray-300 mb-6">Python | Pytorch | Pandas</p> */}
+
             <TitleSlider />
 
             {/* Social Links */}

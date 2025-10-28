@@ -6,6 +6,7 @@ import Header from './components/header';
 import WorkExperience from './components/work-experience-section';
 import ProjectDetailsModal from './components/ProjectDetails';
 import NavigationMenu from './components/NavigationMenu';
+import OpenSourceSection from './components/OpenSourceSection';
 
 // Main Component
 export default function Portfolio() {
@@ -76,6 +77,10 @@ export default function Portfolio() {
           isVisible={isVisible.education}
         />
 
+        <CertificationsSection
+          isVisible={isVisible.certifications}
+        />
+
         <WorkExperience
           isVisible={isVisible.workExperience}
           onProjectClick={setSelectedProject}
@@ -86,10 +91,10 @@ export default function Portfolio() {
           setSelectedProject={setSelectedProject}
         />
 
-
-        <CertificationsSection
-          isVisible={isVisible.certifications}
+        <OpenSourceSection
+          isVisible={isVisible.opensource}
         />
+
         <footer className="text-center">
           {/* <div className="backdrop-blur-2xl bg-white/5 rounded-3xl p-6 shadow-2xl border border-white/10 hover:bg-white/10 transition-all duration-500">
             <p className="text-gray-400">© 2025 Zeeshan Ali. All rights reserved.</p>

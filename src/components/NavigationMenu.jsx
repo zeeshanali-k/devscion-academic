@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Home, GraduationCap, Briefcase, FolderKanban, Award } from 'lucide-react';
+import { Home, GraduationCap, Briefcase, FolderKanban, FolderGit2, Award } from 'lucide-react';
 
 export default function NavigationMenu() {
     const [activeSection, setActiveSection] = useState('header');
@@ -8,9 +8,10 @@ export default function NavigationMenu() {
     const navItems = [
         { id: 'header', label: 'Home', icon: Home },
         { id: 'education', label: 'Education', icon: GraduationCap },
+        { id: 'certifications', label: 'Certifications', icon: Award },
         { id: 'workExperience', label: 'Experience', icon: Briefcase },
         { id: 'projects', label: 'Projects', icon: FolderKanban },
-        { id: 'certifications', label: 'Certifications', icon: Award }
+        { id: 'opensource', label: 'OpenSource', icon: FolderGit2 }
     ];
 
     // Track scroll position
