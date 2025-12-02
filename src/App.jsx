@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import ProjectsSection from './components/projects-section';
 import CertificationsSection from './components/certifications-section';
 import EducationSection from './components/education-section';
@@ -45,29 +45,12 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
-      {/* Background decoration with parallax */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div
-          className="absolute top-20 left-10 w-96 h-96 bg-purple-600/30 rounded-full mix-blend-normal filter blur-3xl opacity-40 animate-pulse"
-          style={{ transform: `translateY(${scrollY * 0.3}px)` }}
-        ></div>
-        <div
-          className="absolute top-40 right-10 w-96 h-96 bg-blue-600/30 rounded-full mix-blend-normal filter blur-3xl opacity-40 animate-pulse"
-          style={{ animationDelay: '1s', transform: `translateY(${scrollY * 0.2}px)` }}
-        ></div>
-        <div
-          className="absolute bottom-20 left-1/2 w-96 h-96 bg-pink-600/30 rounded-full mix-blend-normal filter blur-3xl opacity-40 animate-pulse"
-          style={{ animationDelay: '2s', transform: `translateY(${scrollY * 0.4}px)` }}
-        ></div>
-      </div>
 
       <div className="relative z-10 container mx-auto px-4 py-12 max-w-6xl">
         <NavigationMenu />
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-          {/* ... existing background blobs ... */}
         </div>
         <div className="relative z-10 container mx-auto px-4 py-12 max-w-6xl pt-24">
-          {/* ... rest of your content ... */}
         </div>
         {/* Header Section */}
         <Header
@@ -147,7 +130,7 @@ export default function Portfolio() {
         }
         
         ::-webkit-scrollbar-thumb {
-          background: linear-gradient(180deg, rgba(168, 85, 247, 0.4), rgba(59, 130, 246, 0.4));
+          background: rgba(168, 85, 247, 1);
           backdrop-filter: blur(20px);
           border-radius: 12px;
           border: 2px solid rgba(255, 255, 255, 0.2);
@@ -155,13 +138,13 @@ export default function Portfolio() {
         }
         
         ::-webkit-scrollbar-thumb:hover {
-          background: linear-gradient(180deg, rgba(168, 85, 247, 0.6), rgba(59, 130, 246, 0.6));
+          background:  rgba(168, 85, 247, 1);
           border-color: rgba(255, 255, 255, 0.3);
           box-shadow: 0 6px 16px rgba(168, 85, 247, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.4);
         }
         
         ::-webkit-scrollbar-thumb:active {
-          background: linear-gradient(180deg, rgba(168, 85, 247, 0.8), rgba(59, 130, 246, 0.8));
+          background:  rgba(168, 85, 247, 1);
           border-color: rgba(255, 255, 255, 0.4);
           box-shadow: 0 8px 20px rgba(168, 85, 247, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.5);
         }
@@ -169,7 +152,7 @@ export default function Portfolio() {
         /* Firefox Scrollbar */
         * {
           scrollbar-width: auto;
-          scrollbar-color: rgba(168, 85, 247, 0.5) rgba(255, 255, 255, 0.05);
+          scrollbar-color:  rgba(168, 85, 247, 1);
         }
       `}</style>
     </div>

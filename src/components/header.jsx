@@ -129,29 +129,14 @@ function TitleSlider() {
             </div>
 
             {/* Progress Bar */}
-            <div className="w-full max-w-md mx-auto mb-4">
+            {/* <div className="w-20 max-w-md mx-auto mb-4">
                 <div className="h-1 bg-white/10 rounded-full overflow-hidden backdrop-blur-lg">
                     <div
                         className="h-full bg-gradient-to-r from-purple-400 via-blue-400 to-pink-400 rounded-full transition-all duration-75 ease-linear"
                         style={{ width: `${progress}%` }}
                     />
                 </div>
-
-                {/* Dot indicators */}
-                <div className="flex justify-center gap-2 mt-3">
-                    {titles.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => setCurrentIndex(index)}
-                            className={`transition-all duration-300 rounded-full ${index === currentIndex
-                                ? 'w-2 h-2 bg-gradient-to-r from-purple-400 to-blue-400 scale-125'
-                                : 'w-1.5 h-1.5 bg-gray-600 hover:bg-gray-500'
-                                }`}
-                            aria-label={`Go to slide ${index + 1}`}
-                        />
-                    ))}
-                </div>
-            </div>
+            </div> */}
         </div>
     );
 }

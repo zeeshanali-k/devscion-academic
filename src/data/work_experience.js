@@ -29,7 +29,7 @@ export const workExperience = [
             'Managing clients and working closely with them to meet the requirements',
             'Maintaining projects and Resolving technical issues'
         ],
-        relatedProjects: [4, 3]
+        relatedProjects: [5, 4, 3, 7]
     },
     {
         id: 3,
@@ -44,6 +44,6 @@ export const workExperience = [
             'Backend development for Mobile Apps using PHP/Laravel',
             'Maintaining projects and Resolving technical issues in Frontend and Backend'
         ],
-        relatedProjects: [5]
+        relatedProjects: [6]
     }
 ];
