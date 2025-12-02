@@ -5,7 +5,7 @@ export const projects = [
         title: 'Feres - Taxi Booking App',
         description: 'Ethiopia\'s Leading Taxi App built entirely in KMP (Kotlin Multiplatform).',
         technologies: ["Kotlin", "Swift (Basic)", "Android", "iOS", "KMP", "Compose Multiplatform", "Gradle", "REST APIs", "Push Notifications (FCM)", "Google Maps"],
-        image: './images/project1.jpg',
+        image: './images/feres_logo.jpeg',
         detailedDescription: 'Feres is a taxi booking app functional only in Ethiopia and a few surrounding countries. It is built using latest technology in every aspect. I worked on the Feres User App (used to book rides). It is built using KMP for shared business logic and Compose Multiplatform for shared UI supporting Android and iOS, both platforms.',
         features: [
             'Uses GoogleMaps to show nearby driver\'s location',
@@ -24,7 +24,7 @@ export const projects = [
         title: 'Classy',
         description: 'Image Generation and Image Captioning Multiplatform App.',
         technologies: ["Kotlin", "Android Studio", "Compose Multiplatform", "Gradle", "AI", "Stable Diffusion", "PyTorch", "REST Api"],
-        image: './images/project1.jpg',
+        image: './images/classy.jpg',
         detailedDescription: 'Image Generation and Image Captioning Mobile App based on the HuggingFace\'s free Inference REST API of custom trained models. It is built for Android, iOS, Desktop and Web using KMP for shared business logic and Compose Multiplatform for shared UI. Models training is done using Python.',
         features: [
             'Image generation',
@@ -41,7 +41,7 @@ export const projects = [
         title: 'ZYSKY',
         description: 'A Cross Platform Benefits application (in Poland) for ZYSKY system users built using Flutter.',
         technologies: ["Dart", "Flutter", "Android", "iOS", "REST APIs", "Google Maps", "Push Notifications (FCM)"],
-        image: './images/project1.jpg',
+        image: './images/zysky.png',
         detailedDescription: 'A users benefits application (in Poland) for ZYSKY system users built using Flutter/Dart. It has different modules including user app and admin panel, both built in Flutter and Flutter Web respectively.',
         features: [
             'Search and view nearby partners/shops',
@@ -56,11 +56,11 @@ export const projects = [
     },
     {
         id: 4,
-        title: 'AI Writing Assistant',
+        title: 'TypeWell',
         description: 'An AI assitant for writing and optimizing text built in Flutter.',
         technologies: ["Dart", "Flutter", "Android", "iOS", "OpenAI GPT API"],
         image: './images/project1.jpg',
-        detailedDescription: 'This app is built in Flutter utilising OpenAI GPT api for processing text via LLMs. It provides options to generate new text and optimize existing text supporting various tones. I also provides option to extract text from images and allows user to generate pdf based on provided templates.',
+        detailedDescription: 'TypeWell is built in Flutter utilising OpenAI GPT api for processing text via LLMs. It provides options to generate new text and optimize existing text supporting various tones. I also provides option to extract text from images and allows user to generate pdf based on provided templates.',
         features: [
             'Generate new text',
             'Optimize existing text',
@@ -76,7 +76,7 @@ export const projects = [
         title: 'CoinPay',
         description: 'A Crypto Wallet similar to MetaMask.',
         technologies: ["Android", "Kotlin", "Jetpack Compose", "Blockchain"],
-        image: './images/project1.jpg',
+        image: './images/coinpay.png',
         detailedDescription: 'CoinPay is a Fully Fledged Crypto Wallet like MetaMask built for Android. It has all the features of a crypto wallet including Wallet Creation, Restoration, Receiving Crypto and Sending Crypto. It is built entirley in Jetpack Compose and Kotlin. Web3j is used for communicating with blockchain via a RPC provider named Infura. It allows to receive/send crypto coins using respective contracts for each coin including USDT, USDC etc.',
         features: [
             'Crypto wallet creation',
@@ -95,7 +95,7 @@ export const projects = [
         title: 'VC Panel',
         description: 'VC Panel is Vehicle Tracking Anti Theft system built in Kotlin and PHP (Laravel) as backend',
         technologies: ["Kotlin", "Jetpack Compose", "Websockets", "PHP", "Laravel", "MySQL", "REST APIs"],
-        image: './images/project1.jpg',
+        image: './images/vc_panel.png',
         detailedDescription: 'VC Panel is Vehicle Tracking Anti Theft system built in Native Android using Kotlin and Google Maps for showing vehicle tracking data. It uses PHP (Laravel) as backend for REST APIs and live vehicle tracking using Laravel Sockets library for web sockets. The purpose of this project is to make people feel safe about their vehicles and easily recover their vehicle in case of theft.',
         features: [
             'Set fences and get notified whenever the vehicle enters or leaves fence',
@@ -113,7 +113,7 @@ export const projects = [
         title: 'IQ Sync',
         description: 'A trading educational platform',
         technologies: ["Dart", "Flutter"],
-        image: './images/project1.jpg',
+        image: './images/iq_sync.png',
         detailedDescription: 'IQ Sync is a mobile app designed to help traders grow and succeed in the financial markets. The app offers comprehensive trading education, making it easy to learn the basics and advanced strategies at your own pace. Users can access live streams for real-time market analysis and expert insights. Trade alerts keep you updated on potential opportunities, so you never miss a key move. With the Swipe To Trade feature, executing trades becomes quick and simple, giving you more control and confidence. IQ Sync brings everything you need to improve your trading, all in one place.',
         features: [
             'Push alerts for new trades',
