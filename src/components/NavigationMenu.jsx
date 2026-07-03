@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Home, GraduationCap, Briefcase, FolderKanban, FolderGit2, Award } from 'lucide-react';
+import { Home, GraduationCap, Briefcase, FolderKanban, FolderGit2, Award, FileText } from 'lucide-react';
 
 export default function NavigationMenu() {
     const [activeSection, setActiveSection] = useState('header');
@@ -96,6 +96,17 @@ export default function NavigationMenu() {
                                 </button>
                             );
                         })}
+
+                        {/* Resume/CV Button */}
+                        <a
+                            href="/media/Resume_Zeeshan_Ali.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-purple-500/80 to-blue-600/80 text-white font-medium text-sm shadow-lg border border-white/20 hover:from-purple-500 hover:to-blue-600 hover:scale-105 transition-all duration-300"
+                        >
+                            <FileText className="w-4 h-4" />
+                            <span className="hidden md:block">Resume/CV</span>
+                        </a>
                     </div>
                 </div>
             </div>
