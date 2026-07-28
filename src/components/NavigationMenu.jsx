@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Home, GraduationCap, Briefcase, FolderKanban, FolderGit2, Award, FileText, Menu, X } from 'lucide-react';
+import { Home, GraduationCap, Briefcase, FolderKanban, FolderGit2, Award, FileText, Menu, Trophy, X } from 'lucide-react';
 
 export default function NavigationMenu() {
     const [activeSection, setActiveSection] = useState('header');
@@ -12,6 +12,7 @@ export default function NavigationMenu() {
         { id: 'certifications', label: 'Certifications', icon: Award },
         { id: 'workExperience', label: 'Experience', icon: Briefcase },
         { id: 'projects', label: 'Projects', icon: FolderKanban },
+        { id: 'hackathons', label: 'Hackathons', icon: Trophy },
         { id: 'opensource', label: 'OpenSource', icon: FolderGit2 }
     ];
 
@@ -43,7 +44,7 @@ export default function NavigationMenu() {
     // Close mobile menu when resizing to desktop
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth >= 768) {
+            if (window.innerWidth >= 1280) {
                 setIsMobileMenuOpen(false);
             }
         };
@@ -86,7 +87,7 @@ export default function NavigationMenu() {
                     </button>
 
                     {/* Desktop Navigation Links */}
-                    <div className="hidden md:flex items-center gap-2">
+                    <div className="hidden xl:flex items-center gap-2">
                         {navItems.map((item) => {
                             const Icon = item.icon;
                             const isActive = activeSection === item.id;
@@ -124,7 +125,7 @@ export default function NavigationMenu() {
                     </div>
 
                     {/* Mobile Actions */}
-                    <div className="flex md:hidden items-center gap-2">
+                    <div className="flex xl:hidden items-center gap-2">
                         {/* Resume/CV Button (Icon only on mobile) */}
                         <a
                             href="/media/Resume_Zeeshan_Ali.pdf"
@@ -153,7 +154,7 @@ export default function NavigationMenu() {
 
                 {/* Mobile Dropdown Menu */}
                 <div
-                    className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen
+                    className={`xl:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen
                         ? 'max-h-96 opacity-100 pb-4'
                         : 'max-h-0 opacity-0'
                         }`}
