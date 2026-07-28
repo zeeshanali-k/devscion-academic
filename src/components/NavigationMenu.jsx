@@ -75,16 +75,6 @@ export default function NavigationMenu() {
         >
             <div className="container mx-auto px-4 max-w-6xl">
                 <div className="flex items-center justify-between py-4">
-                    {/* Logo/Brand */}
-                    <button
-                        onClick={() => scrollToSection('header')}
-                        className="flex items-center gap-2 group"
-                    >
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500/80 to-blue-600/80 backdrop-blur-xl flex items-center justify-center text-white text-sm font-bold shadow-lg border border-white/20 group-hover:scale-110 transition-transform duration-300">
-                            ZA
-                        </div>
-                        <span className="text-white font-bold text-lg hidden sm:block">Zeeshan Ali</span>
-                    </button>
 
                     {/* Desktop Navigation Links */}
                     <div className="hidden xl:flex items-center gap-2">
