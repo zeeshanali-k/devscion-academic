@@ -7,6 +7,8 @@ import WorkExperience from './components/work-experience-section';
 import ProjectDetailsModal from './components/ProjectDetails';
 import NavigationMenu from './components/NavigationMenu';
 import OpenSourceSection from './components/OpenSourceSection';
+import HackathonsSection from './components/hackathons-section';
+import AchievementsSection from './components/achievements-section';
 
 // Main Component
 export default function Portfolio() {
@@ -56,6 +58,10 @@ export default function Portfolio() {
         <Header
           isVisible={isVisible.header} />
 
+        <AchievementsSection
+          isVisible={isVisible.achievements}
+        />
+
         <EducationSection
           isVisible={isVisible.education}
         />
@@ -72,6 +78,10 @@ export default function Portfolio() {
         <ProjectsSection
           isVisible={isVisible.projects}
           setSelectedProject={setSelectedProject}
+        />
+
+        <HackathonsSection
+          isVisible={isVisible.hackathons}
         />
 
         <OpenSourceSection

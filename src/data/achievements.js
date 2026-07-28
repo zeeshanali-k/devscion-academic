@@ -1,0 +1,40 @@
+export const achievements = [
+    {
+        id: 'ielts',
+        title: 'IELTS Overall Band 7.0',
+        description: 'Speaking 6.5, Writing 7.0, Listening 7.0, and Reading 7.5.',
+        link: 'https://drive.google.com/file/d/18JHcnUg3EcmQhUHtpD4Eg_4lHZvsaVSj/view?usp=sharing',
+        linkLabel: 'IELTS TRF'
+    },
+    {
+        id: 'international-projects',
+        title: '30+ International Projects',
+        description: 'Completed 30+ international projects with a 100% Job Success Score as a Mobile Apps Developer on Upwork.',
+        link: 'https://www.upwork.com/freelancers/~01d51bb5a88e242f6f?mp_source=share',
+        linkLabel: 'Upwork Profile'
+    },
+    {
+        id: 'international-hackathons',
+        title: '6x International Hackathons',
+        description: 'Participated in six international hackathons across applied AI and software development.',
+        link: 'https://drive.google.com/file/d/1lD_2xCiRvlSQ7Vnb5RG9z_7BzIlrLdQB/view?usp=sharing',
+        linkLabel: 'Certificates'
+    },
+    {
+        id: 'aspire-leaders',
+        title: 'Aspire Leaders Program',
+        description: 'Selected for the 2026 Harvard-founded global leadership program.'
+    },
+    {
+        id: 'hack-nation',
+        title: 'Hack-Nation Global AI Hackathon',
+        description: 'Selected as a participant in the global AI hackathon.'
+    }
+];
+
+export const teachingExperience = {
+    title: 'Volunteer Teaching at iCodeGuru',
+    description: 'Covered Operating Systems fundamentals, from processes, threads, and CPU scheduling to memory management, with practical Linux labs and C++ examples in a six-week course.',
+    websiteUrl: 'https://icode.guru',
+    playlistUrl: 'https://www.youtube.com/playlist?list=PLe-jr3hh4N_lRYkct5UEZTpw0qVLy4I9J'
+};
