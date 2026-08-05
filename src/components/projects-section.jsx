@@ -7,7 +7,7 @@ export default function ProjectsSection({ setSelectedProject }) {
       <div className="section-heading section-heading-split">
         <div className="heading-group">
           <span className="section-icon"><FolderKanban size={19} /></span>
-          <div><p className="section-kicker">Technical portfolio</p><h2>Selected work</h2></div>
+          <div><p className="section-kicker">Technical portfolio</p><h2>Selected Projects</h2></div>
         </div>
         <p className="section-summary">A selection of shipped systems spanning applied AI and cross-platform engineering.</p>
       </div>
