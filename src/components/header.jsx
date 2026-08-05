@@ -47,7 +47,7 @@ export default function Header() {
           {researchInterests.map((interest) => <li key={interest}>{interest}</li>)}
         </ul>
         <div className="location-line">
-          <MapPin size={15} /> Pakistan · Open to PhD opportunities in the USA
+          <MapPin size={15} /> Pakistan · Prospective Graduate Candidate
         </div>
         <a className="quiet-link" href="#education">Review profile <ArrowDown size={14} /></a>
       </div>
