@@ -23,12 +23,7 @@ export const achievements = [
     {
         id: 'aspire-leaders',
         title: 'Aspire Leaders Program',
-        description: 'Selected for the 2026 Harvard-founded global leadership program.'
-    },
-    {
-        id: 'hack-nation',
-        title: 'Hack-Nation Global AI Hackathon',
-        description: 'Selected as a participant in the global AI hackathon.'
+        description: 'Selected for the 2026 Aspire leaders program (Harvard-founded global leadership program).'
     }
 ];
 
