@@ -4,6 +4,7 @@ import { FileText, Menu, X } from 'lucide-react';
 const navItems = [
   { id: 'header', label: 'About' },
   { id: 'education', label: 'Education' },
+  { id: 'teaching', label: 'Teaching' },
   { id: 'projects', label: 'Selected work' },
   { id: 'workExperience', label: 'Experience' },
   { id: 'hackathons', label: 'Research builds' },

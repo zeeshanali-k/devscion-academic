@@ -52,10 +52,10 @@ export const hackathons = [
     {
         id: 'video-captioning-pipeline',
         hackathonName: 'AMD Developer Hackathon (Act II)',
-        projectName: 'Video Captioning Pipeline',
+        projectName: 'Whisper Lens',
         description: 'A containerized, local-first AI agent that detects video scenes, transcribes audio, and combines visual frames with transcripts to generate context-aware captions in multiple styles.',
         technologies: ['Python', 'Docker', 'PySceneDetect', 'FFmpeg', 'whisper.cpp', 'Ollama', 'Fireworks AI', 'Vision-Language Models'],
-        githubUrl: 'https://github.com/zeeshanali-k/video_captioning_pipeline',
+        githubUrl: 'https://github.com/zeeshanali-k/whisperlens',
         certificateUrl: '',
         hackathonWebsiteUrl: 'https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-ii'
     }

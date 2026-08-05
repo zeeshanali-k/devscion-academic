@@ -5,7 +5,7 @@ export default function HackathonsSection() {
   return (
     <section className="section-block" id="hackathons">
       <div className="section-heading section-heading-split">
-        <div className="heading-group"><span className="section-icon"><FlaskConical size={19} /></span><div><p className="section-kicker">Rapid research prototypes</p><h2>Research builds</h2></div></div>
+        <div className="heading-group"><span className="section-icon"><FlaskConical size={19} /></span><div><p className="section-kicker">Rapid hackathon prototypes</p><h2>Hackathons</h2></div></div>
         <p className="section-summary">Short-cycle collaborations where I explore new AI workflows and learning tools.</p>
       </div>
       <div className="research-grid">

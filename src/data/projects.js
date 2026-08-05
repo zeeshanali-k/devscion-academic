@@ -3,14 +3,15 @@ export const projects = [
     {
         id: 1,
         title: 'Feres - Taxi Booking App',
-        description: 'Ethiopia\'s Leading Taxi App built entirely in KMP (Kotlin Multiplatform).',
+        description: 'Ethiopia\'s leading ride-hailing and food delivery platform with 1M+ downloads and 70k+ active users, built entirely in KMP (Kotlin Multiplatform).',
         technologies: ["Kotlin", "Swift (Basic)", "Android", "iOS", "KMP", "Compose Multiplatform", "Gradle", "REST APIs", "Push Notifications (FCM)", "Google Maps"],
         image: './images/feres_logo.jpeg',
-        detailedDescription: 'Feres is a taxi booking app functional only in Ethiopia and a few surrounding countries. It is built using latest technology in every aspect. I worked on the Feres User App (used to book rides). It is built using KMP for shared business logic and Compose Multiplatform for shared UI supporting Android and iOS, both platforms.',
+        detailedDescription: 'Feres is a taxi booking and food delivery platform functional only in Ethiopia and a few surrounding countries, with 1M+ downloads and 70k+ active users. It is built using latest technology in every aspect. I led the mobile engineering team and worked on the Feres User App (used to book rides). It is built using KMP for shared business logic and Compose Multiplatform for shared UI supporting Android and iOS, both platforms. We reduced ANRs/crashes by 20% and improved API response performance by 15% through modularization and architecture refactoring.',
         features: [
             'Uses GoogleMaps to show nearby driver\'s location',
             'Implements GRPC for driver live location updates during trip',
-            'REST Apis for communicating with server for purposes like fetching nearby drivers, booking trip etc.'
+            'REST Apis for communicating with server for purposes like fetching nearby drivers, booking trip etc.',
+            'Food delivery order placement flows'
         ],
         duration: 'July 2024 - June 2026',
         role: 'Lead Mobile App Developer',
@@ -23,9 +24,9 @@ export const projects = [
         id: 2,
         title: 'Classy',
         description: 'Image Generation and Image Captioning Multiplatform App.',
-        technologies: ["Kotlin", "Android Studio", "Compose Multiplatform", "Gradle", "AI", "Stable Diffusion", "PyTorch", "REST Api"],
+        technologies: ["Kotlin", "Android Studio", "Compose Multiplatform", "Gradle", "AI", "Stable Diffusion", "DreamBooth", "Diffusers", "PyTorch", "REST Api"],
         image: './images/classy.jpg',
-        detailedDescription: 'Image Generation and Image Captioning Mobile App based on the HuggingFace\'s free Inference REST API of custom trained models. It is built for Android, iOS, Desktop and Web using KMP for shared business logic and Compose Multiplatform for shared UI. Models training is done using Python.',
+        detailedDescription: 'Final Year Project: Image Generation and Image Captioning Mobile App focused on Pakistani historical architecture, based on the HuggingFace\'s free Inference REST API of custom trained models. It is built for Android, iOS, Desktop and Web using KMP for shared business logic and Compose Multiplatform for shared UI. A Stable Diffusion/DreamBooth text-to-image model was trained for historical-place generation using a Diffusers-compatible workflow in Python.',
         features: [
             'Image generation',
             'Image captionining'
@@ -88,6 +89,7 @@ export const projects = [
         duration: 'April 2023 - May 2023',
         role: 'Mobile App Developer',
         team: '1 members',
+        github: 'https://github.com/zeeshanali-k/CoinPay',
         link: 'https://drive.google.com/file/d/1eEUgP5R-nX0meBGTpQA9qhruBVOcSh26/view?usp=sharing'
     },
     {
@@ -124,5 +126,22 @@ export const projects = [
         team: '1 members',
         playLink: 'https://play.google.com/store/apps/details?id=com.enigmalabs.iqsync&hl=en',
         appStoreLink: 'https://apps.apple.com/pk/app/iq-sync/id6753764389'
+    },
+    {
+        id: 8,
+        title: 'GenAI_PG',
+        description: 'An open-source on-device Generative AI playground for Android and iOS built with Kotlin Multiplatform.',
+        technologies: ["Kotlin", "Kotlin Multiplatform", "Compose Multiplatform", "MediaPipe GenAI", "LiteRT-LM", "Llamatik", "RAG", "Android", "iOS"],
+        detailedDescription: 'GenAI_PG is an experimental KMP/CMP app for on-device LLM inference, runtime backend comparison, chat workflows, document attachments, and RAG-style context retrieval. It explores local model execution using MediaPipe GenAI/LLM Inference, LiteRT-LM, Llamatik, and Google AI Edge tooling.',
+        features: [
+            'On-device LLM inference',
+            'Runtime backend comparison',
+            'Chat workflows with document attachments',
+            'RAG-style context retrieval'
+        ],
+        duration: '2025',
+        role: 'Mobile App Developer',
+        team: '1 members',
+        github: 'https://github.com/zeeshanali-k/GenAI_PG'
     }
 ];

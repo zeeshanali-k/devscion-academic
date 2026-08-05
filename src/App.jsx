@@ -2,6 +2,7 @@ import { useState } from 'react';
 import NavigationMenu from './components/NavigationMenu';
 import Header from './components/header';
 import EducationSection from './components/education-section';
+import TeachingSection from './components/teaching-section';
 import ProjectsSection from './components/projects-section';
 import AchievementsSection from './components/achievements-section';
 import WorkExperience from './components/work-experience-section';
@@ -22,6 +23,7 @@ export default function Portfolio() {
         <div className="content-grid">
           <div className="main-column">
             <EducationSection />
+            <TeachingSection />
             <ProjectsSection setSelectedProject={setSelectedProject} />
             <WorkExperience onProjectClick={setSelectedProject} />
             <HackathonsSection />
