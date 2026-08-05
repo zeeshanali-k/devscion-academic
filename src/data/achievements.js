@@ -3,7 +3,7 @@ export const achievements = [
         id: 'ielts',
         title: 'IELTS Overall Band 7.0',
         description: 'Speaking 6.5, Writing 7.0, Listening 7.0, and Reading 7.5.',
-        link: 'https://drive.google.com/file/d/18JHcnUg3EcmQhUHtpD4Eg_4lHZvsaVSj/view?usp=sharing',
+        link: 'https://drive.google.com/file/d/1ATVZs7s1pWS2id-u4e4LxcP-dI-9zZrl/view?usp=sharing',
         linkLabel: 'IELTS TRF'
     },
     {

@@ -4,7 +4,7 @@ export const education = [
         id: 1,
         degree: 'Bachelor of Science in Computer Science',
         institution: 'University of Sargodha',
-        duration: '2019 - 2023 (Completion 2024)',
+        duration: '2019 - 2024',
         gpa: '3.01/4.0 (65%)'
     },
     {
