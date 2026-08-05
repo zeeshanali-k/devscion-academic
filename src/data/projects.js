@@ -12,7 +12,7 @@ export const projects = [
             'Implements GRPC for driver live location updates during trip',
             'REST Apis for communicating with server for purposes like fetching nearby drivers, booking trip etc.'
         ],
-        duration: 'July 2024 - Ongoing (Maintainance)',
+        duration: 'July 2024 - June 2026',
         role: 'Lead Mobile App Developer',
         team: '4 members',
         website: 'https://feres.co',

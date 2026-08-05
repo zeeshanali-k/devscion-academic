@@ -4,7 +4,7 @@ export const workExperience = [
         title: 'Lead KMP Mobile App Developer',
         company: 'Tabaarak ICT (Feres)',
         location: 'Addis Ababa, Ethiopia (Remote)',
-        duration: 'July 2024 - Present',
+        duration: 'July 2024 - Jun 2026',
         type: 'Full-time',
         description: 'Led development of a Ride Booking App called Feres (Available in Ehtiopia and nearby countries) and managed a team of 2 engineers. Implemented complete dynamic UI and Business Logic of whole app from booking ride to tracking ride including push notifications delivery. Added the ability to handle push notifications efficiently. Reduced app load times 20% by managing REST Api Calls efficiently.',
         responsibilities: [
