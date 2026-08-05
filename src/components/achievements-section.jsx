@@ -1,5 +1,5 @@
-import { Award, BookOpen, ExternalLink } from 'lucide-react';
-import { achievements, teachingExperience } from '../data/achievements';
+import { Award, ExternalLink } from 'lucide-react';
+import { achievements } from '../data/achievements';
 
 export default function AchievementsSection() {
   return (
@@ -13,16 +13,6 @@ export default function AchievementsSection() {
             {item.link && <a href={item.link} target="_blank" rel="noreferrer">{item.linkLabel} <ExternalLink size={12} /></a>}
           </article>
         ))}
-      </div>
-
-      <div className="teaching-note">
-        <BookOpen size={18} />
-        <div>
-          <p className="note-label">Teaching</p>
-          <h3>{teachingExperience.title}</h3>
-          <p>{teachingExperience.description}</p>
-          <a href={teachingExperience.playlistUrl} target="_blank" rel="noreferrer">Course playlist <ExternalLink size={12} /></a>
-        </div>
       </div>
     </section>
   );

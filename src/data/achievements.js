@@ -32,9 +32,21 @@ export const achievements = [
     }
 ];
 
-export const teachingExperience = {
-    title: 'Volunteer Teaching at iCodeGuru',
-    description: 'Covered Operating Systems fundamentals, from processes, threads, and CPU scheduling to memory management, with practical Linux labs and C++ examples in a six-week course.',
-    websiteUrl: 'https://icode.guru',
-    playlistUrl: 'https://www.youtube.com/playlist?list=PLe-jr3hh4N_lRYkct5UEZTpw0qVLy4I9J'
-};
+export const teachingExperience = [
+    {
+        id: 'operating-systems',
+        title: 'Operating Systems',
+        organization: 'iCodeGuru',
+        description: 'Covered processes, threads, CPU scheduling, synchronization, and memory management through practical Linux labs and C++ examples in a six-week course.',
+        websiteUrl: 'https://icode.guru',
+        playlistUrl: 'https://www.youtube.com/playlist?list=PLe-jr3hh4N_lRYkct5UEZTpw0qVLy4I9J'
+    },
+    {
+        id: 'cuda-programming',
+        title: 'CUDA Programming',
+        organization: 'iCodeGuru',
+        description: 'Covered GPU computing fundamentals, the CUDA programming model, kernels, threads and blocks, memory hierarchy, and practical parallel-programming examples.',
+        websiteUrl: 'https://icode.guru',
+        playlistUrl: 'https://youtube.com/playlist?list=PLJZm-Rgd2Kbg&si=FrlnkF3xs0cxvMBv'
+    }
+];
