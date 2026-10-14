@@ -38,6 +38,14 @@ export const achievements = [
 
 export const teachingExperience = [
     {
+        id: 'deep-learning-pytorch',
+        title: 'Deep Learning with PyTorch',
+        organization: 'iCodeGuru',
+        description: 'Taught theoretical concepts of deep learning and practical implementation of deep learning models using Python and PyTorch.',
+        websiteUrl: 'https://icode.guru',
+        playlistUrl: 'https://www.youtube.com/playlist?list=PLIGkA6lrBzUE'
+    },
+    {
         id: 'operating-systems',
         title: 'Operating Systems',
         organization: 'iCodeGuru',
