@@ -7,6 +7,20 @@ export const achievements = [
         linkLabel: 'IELTS TRF'
     },
     {
+        id: 'stanford-pai',
+        title: 'Stanford Probability for AI',
+        description: 'Selected as a Section Leader for Stanford Probability for AI (PAI).',
+        link: 'https://pai.stanford.edu/pai1/user/fyjy9GMECOPKNx5eiy9Csc0hhXt1',
+        linkLabel: 'PAI Profile'
+    },
+    {
+        id: 'aspire-leaders',
+        title: 'Aspire Leaders Program Alumni',
+        description: 'Alumni of the Harvard-founded Aspire Leaders Program, 2026 - Cohort 3.',
+        link: 'https://drive.google.com/file/d/1k3mm3jVYt9Df3qNPZe4dzI3l_L44hTyl/view?usp=sharing',
+        linkLabel: 'Certificate'
+    },
+    {
         id: 'international-projects',
         title: '30+ International Projects',
         description: 'Completed 30+ international projects with a 100% Job Success Score as a Mobile Apps Developer on Upwork.',
@@ -19,11 +33,6 @@ export const achievements = [
         description: 'Participated in six international hackathons across applied AI and software development.',
         link: 'https://drive.google.com/file/d/1lD_2xCiRvlSQ7Vnb5RG9z_7BzIlrLdQB/view?usp=sharing',
         linkLabel: 'Certificates'
-    },
-    {
-        id: 'aspire-leaders',
-        title: 'Aspire Leaders Program',
-        description: 'Selected for the 2026 Aspire leaders program (Harvard-founded global leadership program).'
     }
 ];
 
